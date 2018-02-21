@@ -1,0 +1,158 @@
+p{
+    color: darkgray;
+    font-family: sans-serif;
+}
+
+a h1{
+    font-family: myFirstFont !important;
+    font-size: 8em;
+    color: green;
+    padding-top: 15px;
+    padding-bottom: 150px;
+    letter-spacing: 10px;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 5em;
+    color: green;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 5em;
+    color: green;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.menu a{
+    color: greenyellow;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+div{   
+    padding-bottom: 50px;
+}
+
+/***css for menu styling that pops out from the right***/
+.menu{
+    background: black;
+    width: 400px;
+    height: 100vh; /***100% of the height of the viewport***/
+    position: fixed;
+    right: -300px;
+    z-index: 1000;
+    opacity: 0.8;
+    padding-top: 300px;
+    /**how slow the pop out comes out from the right**/
+    transition: 1s;
+    -webkit-transition: 1s; /*for safari 3.1 to 6.0*/
+}
+
+@font-face{
+    font-family:myFirstFont;
+    src: url(madrats.ttf);
+}
+
+/*change the padding design on mobile sites*/
+
+@media (max-width: 767.99999999px){
+    div{
+        padding: 10px 40px;
+    }
+    .menu {
+        display: none;
+    }
+
+}
+
+@media (min-width: 768px){
+    .menu-mobile{
+        display: none;
+    }
+}
+    
+.menu-mobie{
+        
+}
+
+
+
+/*******************/
+/***********index.html****/
+
+#index div{
+    padding-bottom: 50px;
+}
+
+
+/*******************/
+/***********work.html****/
+/***peg all carousel images width of the viewport of the website*********************/
+#work #myCarousel{
+padding: 15px;
+
+}
+
+#work #myCarousel img{
+    width: 100vw;
+}
+
+#work .hide-title>h5{
+    opacity: 0;
+    position:absolute;
+    right: 10%;
+    bottom: 10%;
+    color: black;
+    font-size: 1.3em;
+    z-index: 10;  
+}
+
+#work #portfolio img:hover{
+    filter:blur(2px) grayscale(1);
+    -webkit-filter: blur(2px) grayscale(1);    
+        
+}
+
+#work #portfolio img{
+    transition: 1.0s
+
+}
+
+
+
+
+/*#work #portfolio>div{
+    padding: 15px
+}*/
+
+#work .bg-mediumpurple{
+    background-color: mediumpurple;
+    padding: 30px; 
+    margin: 40px; 15px;
+    position: relative;
+}
+
+#work .bg-darkgray{
+    background-color: darkgray;
+    padding: 30px;
+    margin: 40px; 15px;
+    position: relative;
+    
+}
+
+#work .bg-greenyellow{
+    background-color: greenyellow;
+    padding: 30px;
+    margin: 40px; 15px;
+    position: relative;
+    
+}
+    
